@@ -1,0 +1,12 @@
+[09-Apr-2018 16:13:14 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function poweredBy() in /home/gra/public_html/blog/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/gra/public_html/blog/index.php on line 67
+[09-Apr-2018 16:13:17 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function poweredBy() in /home/gra/public_html/blog/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/gra/public_html/blog/index.php on line 67
+[10-Apr-2018 10:17:22 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function poweredBy() in /home/gra/public_html/blog/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/gra/public_html/blog/index.php on line 67

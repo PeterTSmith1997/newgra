@@ -1,0 +1,7 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.genealogyresearchassistance.co.uk/$1 [R,L]
+
+RewriteEngine On
+RewriteRule .* - [E=cache-control:max-age=300]
+

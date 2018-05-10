@@ -1,0 +1,427 @@
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #A48669;
+    margin: 2%;
+}
+#logo{
+    float: left;
+    height: auto;
+    width: 10%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#fb{
+    float: right;
+    width: 5%;
+    height: 5%;
+}
+main{
+    clear: both;
+    width: 85%;
+    background-color: white;
+    display: block;
+    border-radius: 25px;
+    margin: 20px auto;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+main p, h2{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+main a{
+    color: black;
+}
+p #nxt{
+    text-align: center;
+}
+.logo{
+    width: 80%;
+    background-color: #333333;
+    margin: 0 auto;
+    height: 150px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.logo img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+h1{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: solid thin brown;
+    font-size: 2em;
+}
+
+/*nav*/
+#primary_nav_wrap
+{
+    margin-top:15px;
+    margin-bottom:80px;
+    margin-left: 150px;
+    margin-right: auto;
+    background: white
+}
+
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    margin:0;
+    padding:0
+}
+
+#primary_nav_wrap ul a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#primary_nav_wrap ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    width: 15%;
+    padding:0;
+    border-left: thin solid whitesmoke;
+    border-right: thin solid whitesmoke;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+    background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+    float:none;
+    width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+    line-height:120%;
+    padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+    top:0;
+    left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block
+}
+table{
+    border: none;
+    margin-top: 5%;
+}
+table#census{
+    margin: 0 auto;
+}
+td.narrow{
+    border-left: none;
+    width: 5%;
+}
+td.wide{
+    border-left: none;
+    width: 5%;
+}
+tr{
+    border-bottom: thin solid black;
+}
+.right{
+    width: 25%;
+    float: right;
+    margin-left: 1%;
+}
+.imageR{
+    height: 10%;
+    width: 100%;
+    float: right;
+}
+
+.left{
+    width: 100%;
+    height: 10%;
+    float: left;
+    margin-left: 1%;
+}
+.imageL{
+    height: 50px;
+    margin-right: 2%;
+    width: auto;
+    float: left;
+}
+table.sql{
+    border-bottom: thin solid red;
+}
+th.sql{
+    border: thin solid red;
+    background: azure;
+}
+tr.sql{
+    border-bottom: thin solid red;
+    background: azure;
+}
+td.short{
+    width: 18%;
+    word-wrap: break-word;
+    border-right: none;
+    border-left: none;
+    border-bottom: thin solid red;
+    background: azure;
+}
+td.lo{
+    width: 10%;
+    border-right: none;
+    border-left: none;
+    border-bottom: thin solid red;
+    background: azure;
+}
+td.Desc{
+    width: 40%;
+    border-right: none;
+    border-left: none;
+    border-bottom: thin solid red;
+    background: azure;
+}
+ol.comps{
+    font-weight: bold;
+}
+ol li{
+    margin-bottom: 10px;
+}
+div .bottom{
+    float: right;
+    width: 100%;
+}
+div .top{
+    float: left;
+    width: 100%;
+}
+/**contact**/
+form{
+    width: 90%;
+    align-content: center;
+}
+form p{
+    margin: 0%;
+    padding: 0%;
+}
+label{
+    display: block;
+    margin-top: 0.1em;
+}
+label > input{
+    position: absolute;
+}
+input > text{
+    width: 50%;
+}
+input:focus{
+    background-color: aquamarine;
+    border: solid thin black;
+}
+textarea:focus{
+    background-color: aquamarine;
+    border: solid thin black;
+    font-weight: bold;
+}
+select:focus{
+    background-color: aquamarine;
+    border: solid thin black;
+}
+input [type=submit]{
+    padding: 20%;
+    display: block;
+}
+
+form#links{
+    width: 90%;
+}
+form#links > *{
+    width: 19%;
+    padding-right: 1%;
+    float: left;
+}
+.prize > *{
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+    height: 400px;
+}
+#prize2 img{
+    margin-top: 40%;
+}
+img.prizeimg{
+    max-width: 200px !important;
+    vertical-align: middle;
+}
+div.prizeimg{
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.top{
+    clear: both;
+}
+#xmas{
+    font-weight: bold;
+    font-size: 1em;
+    color: navy;
+}
+image.prize{
+    height: 200px;
+    width: auto;
+}
+.prize > p{
+    margin: 0 auto;
+    width: 80%;
+}
+footer{
+    margin: 0 auto;
+    border: thin solid whitesmoke;
+    clear: both;
+}
+footer p{
+    text-align: center;
+    font-weight: 200;
+}
+#enter{
+    font-weight: bold;
+    font-size: 1em;
+    color: red;
+}
+.ans{
+    font-weight: bold;
+    font-size: 1em;
+    color: blue;
+}
+.inport{
+    font-weight: bold;
+    font-size: 1.6em;
+    color: darkred;
+    text-decoration: dotted;
+}
+/* mq large < 1200px*/
+@media screen and (min-width: 1200px){
+
+}
+/* tablet */
+@media screen and (max-width: 760px)
+{
+    body{
+        font-size: 2em;
+    }
+    /*nav*/
+    #primary_nav_wrap ul a {
+        width: 100%;
+    }
+    #primary_nav_wrap ul li{
+        width: 100%;
+    }
+    #primary_nav_wrap ul li:hover > ul
+    {
+        display:block;
+        position: relative;
+    }
+    #fb{
+        width: 20%;
+    }
+    main{
+        margin-bottom: 1%;
+    }
+    #logo{
+        width: 20%;
+    }
+    input > text{
+        width: 100%;
+        height: auto;
+    }
+
+    .right{
+        width: 100%;
+    }
+    .imageR{
+        width: 100%;
+    }
+    .prize{
+        width: 100%;
+    }
+    #prize1{
+        width: 100%;
+    }
+    #prize2{
+        width: 100%;
+    }
+    #prize3{
+        width: 100%;
+    }
+}
+/*moblie*/
+@media screen and (max-width: 550px)
+{
+    body{
+        font-size: 2em;
+    }
+    main{
+        margin-bottom: 2%;
+    }
+
+    .imageR{
+        width: 100%;
+    }
+    input > text{
+        width: 100%;
+        height: auto;
+    }
+    form{
+        width: 100%;
+        margin: auto;
+    }
+
+    .prize{
+        width: 100%;
+    }
+    #prize1{
+        width: 100%;
+    }
+    #prize2{
+        width: 100%;
+    }
+    #prize3{
+        width: 100%;
+    }
+    .top{
+        margin-top: 1350px;
+    }
+}

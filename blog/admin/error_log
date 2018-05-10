@@ -1,0 +1,5 @@
+[08-Apr-2018 19:16:15 Europe/London] PHP Fatal error:  Uncaught Error: Call to a member function logout() on null in /home/gra/public_html/blog/classes/class.user.php:19
+Stack trace:
+#0 /home/gra/public_html/blog/admin/index.php(6): User->is_logged_in()
+#1 {main}
+  thrown in /home/gra/public_html/blog/classes/class.user.php on line 19
