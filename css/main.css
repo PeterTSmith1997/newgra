@@ -1,7 +1,7 @@
 body{
     font-family: arial, helvetica, sans-serif;
     font-size: 1em;
-    background-color: #A48669;
+    background-color: #E6E6FA;
     margin: 2%;
 }
 #logo{
@@ -343,10 +343,14 @@ footer p{
         font-size: 2em;
     }
     /*nav*/
+
+    #primary_nav_wrap
+    {
+        margin: 0 auto;
+    }
     #primary_nav_wrap ul a {
         width: 100%;
         margin: 0 auto;
-
     }
     #primary_nav_wrap ul li{
         width: 100%;
