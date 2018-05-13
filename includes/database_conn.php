@@ -340,11 +340,16 @@ details;
 
 
 function getWinners($id){
-    $sql = "SELECT place, namew, won FROM Winner WHERE win_comp = $id";
+    $sql = "SELECT place, namew, won, id FROM Winner WHERE win_comp = $id";
     $queryResult = doSqlComps($sql);
     $winners = "<h2> The winners were</h2>";
     while ($rowObj = $queryResult->fetchObject()) {
-        $winners .= "<p> <span class='ans'>". $rowObj->place . "</span> prize was " . $rowObj->won . " was won by ".         $namew = $rowObj->namew . ".</p>";
+        if ($rowObj->id == 5 ){
+         $winners .= "<p> Unfortunately there was no second prize winner because nobody else got all the questions correct so this prize will be used shortly in a new competition</p>";
+        }
+        else {
+            $winners .= "<p> <span class='ans'>" . $rowObj->place . "</span> prize was " . $rowObj->won . " was won by " . $namew = $rowObj->namew . ".</p>";
+        }
     }
     
     return $winners;
