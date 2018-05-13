@@ -76,8 +76,8 @@ include '../includes/navBar.php';
     }
     
     
-    if ($comp_id == 1){
-        echo getWinners(1);
+    if ($comp_id < 3){
+        echo getWinners($comp_id);
     }
 
     ?>
