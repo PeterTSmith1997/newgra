@@ -342,6 +342,9 @@ footer p{
     body{
         font-size: 2em;
     }
+    .logo{
+        margin-bottom: 10px;
+    }
     /*nav*/
 
     #primary_nav_wrap
@@ -360,11 +363,13 @@ footer p{
         display:block;
         position: relative;
     }
-    #fb{
-        width: 20%;
-    }
     main{
+        margin-top: 200px;
         margin-bottom: 1%;
+        width: 100%;
+    }
+    main p, h1{
+        word-wrap: break-word;
     }
     #logo{
         width: 20%;
