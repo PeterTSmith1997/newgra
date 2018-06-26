@@ -1,0 +1,7 @@
+DECLARE
+max_id integer;
+rows  integer;
+
+SET max_id = SELECT MAX(id) FROM posted;
+SET rows = count rows
+IF 
