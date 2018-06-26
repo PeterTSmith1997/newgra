@@ -141,18 +141,19 @@ echo "
 
         }
         echo "</table>";
-        echo "<p> Your query returns $count matches</p>";
 
-        $end = microtime(true);
-        $diff = $end - $start;
-
-        $time = number_format($diff, 10);
-        echo "<p> $time</p>";
-        if ($count > 10) {
-            echo "<a href='#top'>Return to top</a>";
-        }
         echo "<p>Please report any broken links to <a href='mailto=webmaster@genealogyresearchassistance.co.uk'>the webmaster</a></p>";
         echo "<p>We would like to extend the library as much as possible and would appreciate any suggestions of sites that have helped you with your research, please <a href='https://goo.gl/forms/EgqSEFEf98pApmGZ2'>submit them here</a></p> ";
+    echo "<p> Your query returns $count matches</p>";
+
+    $end = microtime(true);
+    $diff = $end - $start;
+
+    $time = number_format($diff, 10);
+    echo "<p> $time</p>";
+    if ($count > 10) {
+        echo "<p><a href='#top'>Return to top</a></p>";
+    }
         include '../includes/footer.php';
         echo poweredBy("https://www.petersweb.me.uk/invoicing/link.php?id=3")
 ?>
