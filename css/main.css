@@ -362,6 +362,12 @@ footer p{
     {
         display:block;
         position: relative;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #primary_nav_wrap ul li:hover > ul a {
+        text-align: center;
     }
     main{
         margin-top: 200px;

@@ -31,6 +31,9 @@ include '../includes/navBar.php';
     $dbConn = getConnetionLinks();
     $lo_idf = isset($_REQUEST['location']) ? $_REQUEST['location'] : NULL;
     $ty_idf = isset($_REQUEST['type']) ? $_REQUEST['type']: NULL;
+    if (!is_int($lo_idf) and !is_int($ty_idf)){
+        sqlError();
+    }
     $start = microtime(true);
 
         echo "<form class='links' action='results.php'>

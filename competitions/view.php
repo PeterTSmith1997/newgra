@@ -54,7 +54,10 @@ include '../includes/navBar.php';
     <?php
 
     $comp_id = isset($_REQUEST['comp_id']) ? $_REQUEST['comp_id'] : NULL;
-
+    if (is_int($comp_id)){
+     sqlError();
+     exit;
+    }
     echo comDetails($comp_id);
 
     $ansPost = getCompDates($comp_id);
