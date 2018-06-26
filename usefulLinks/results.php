@@ -31,7 +31,7 @@ include '../includes/navBar.php';
     $dbConn = getConnetionLinks();
     $lo_idf = isset($_REQUEST['location']) ? $_REQUEST['location'] : NULL;
     $ty_idf = isset($_REQUEST['type']) ? $_REQUEST['type']: NULL;
-    if (!is_int($lo_idf) and !is_int($ty_idf)){
+    if (is_int($lo_idf) or is_int($ty_idf) and ($lo_idf <> null or $ty_idf<>null)){
         sqlError();
     }
     $start = microtime(true);
