@@ -27,6 +27,7 @@ include '../includes/navBar.php';
     <h1>Library</h1>
     <p>In the table below are useful research sites. </p>
     <?php
+    require_once '../includes/functions.php';
     require_once  '../includes/database_conn.php';      // make db connection
     $dbConn = getConnetionLinks();
     $lo_idf = isset($_REQUEST['location']) ? $_REQUEST['location'] : NULL;
