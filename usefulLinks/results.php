@@ -31,8 +31,10 @@ include '../includes/navBar.php';
     $dbConn = getConnetionLinks();
     $lo_idf = isset($_REQUEST['location']) ? $_REQUEST['location'] : NULL;
     $ty_idf = isset($_REQUEST['type']) ? $_REQUEST['type']: NULL;
+    $link = getURL();
     if (is_int($lo_idf) or is_int($ty_idf) and ($lo_idf <> null or $ty_idf<>null)){
-        sqlError();
+        sqlError($link);
+        exit;
     }
     $start = microtime(true);
 
@@ -45,8 +47,7 @@ include '../includes/navBar.php';
                     FROM location";
     $queryResult = $dbConn->query($sql);
     if($queryResult === false) {
-        echo "<p>Query failed: please email  webmaster@genealogyresearchassistance.co.uk and let them know what page your looking at 'Library'
-    and the time " . date("h:i:sa"). " also copy the full web address.";
+        sqlError($link);
         exit;
     }
 
@@ -74,8 +75,7 @@ echo "
                     ORDER BY Typename";
     $queryResult = $dbConn->query($sql);
     if($queryResult === false) {
-        echo "<p>Query failed: please email  webmaster@genealogyresearchassistance.co.uk and let them know what page your looking at 'Library'
-    and the time " . date("h:i:sa"). " also copy the full web address.";
+        sqlError($link);
         exit;
     }
 
@@ -112,14 +112,7 @@ echo "
     $sql = setSQL($lo_idf, $ty_idf);
     $queryResult = $dbConn->query($sql);
     if($queryResult === false) {
-
-        echo "<p>There has been an error loading your page please email webmaster@genealogyresearchassistance.co.uk and include:-</p>
-        <ul>
-            <li>The date " . date("d/m/Y") ." and time time " . date("h:i:sa"). "</li>";
-        echo    "<li>Copy and paste web address </li>";
-        echo "</ul>
-        <p>We apologise for the inconvenience caused.</p>";
-
+        sqlError($link);
         exit;
     }
     $count = $queryResult->rowCount();

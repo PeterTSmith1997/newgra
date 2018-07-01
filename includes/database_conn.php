@@ -50,14 +50,13 @@ function getConnetionComps()
     }
     return $conn;
 }
-function sqlError(){
+function sqlError($link){
+    $message = "There was an error on $link at ". date("d-m-Y H:i:s"). "go fix it";
+    $message = wordwrap($message, 70);
+    $email = "peter.t.smith@outook.com";
+    $subject = "GRA error";
 
-    echo "<p>There has been an error loading your page please email webmaster@genealogyresearchassistance.co.uk and include:-</p>
-        <ul>
-            <li>The date " . date("d/m/Y") ." and time time " . date("h:i:sa"). "</li>";
-    echo    "<li>Copy and paste web address </li>";
-    echo "</ul>
-        <p>We apologise for the inconvenience caused.</p>";
+    mail($email,$subject,$message);
 }
 
 function getCompDates($comp_id){
