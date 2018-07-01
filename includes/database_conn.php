@@ -156,6 +156,7 @@ function doSqlComps($sql, $link){
     $queryResult = $dbConn->query($sql);
     if ($queryResult === false){
         sqlError($link);
+        exit;
     }
     return  $queryResult;
 }
