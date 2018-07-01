@@ -57,6 +57,7 @@ function sqlError($link){
     $subject = "GRA error";
 
     mail($email,$subject,$message);
+    echo "There has been an error on this page, our webmaster has been informed and will fix the error as soon as possible";
 }
 
 function getCompDates($comp_id){
