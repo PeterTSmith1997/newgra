@@ -1,1 +1,0 @@
-[08-Apr-2017 17:24:36 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'genealo1_admin'@'localhost' to database 'genealo1_Links' in /home/genealo1/public_html/usefulLinks/database_conn.php on line 2
