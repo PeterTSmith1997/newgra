@@ -63,13 +63,13 @@ include '../includes/navBar.php';
     }
     echo comDetails($comp_id);
 
-    $ansPost = getCompDates($comp_id);
+    $ansPost = getCompDates($comp_id, $link);
 
     $today = date('Y-m-d');
 
     if ($today < $ansPost){
 
-        compQuestion($comp_id, $today);
+        compQuestion($comp_id, $today, $link);
 
     }
 
@@ -77,13 +77,13 @@ include '../includes/navBar.php';
 
     if ($today == $ansPost or $today > $ansPost){
 
-        getAnswers($comp_id);
+        getAnswers($comp_id, $link);
 
     }
     
     
     if ($comp_id < 3){
-        echo getWinners($comp_id);
+        echo getWinners($comp_id, $link);
     }
 
     ?>

@@ -60,24 +60,24 @@ function sqlError($link){
     echo "There has been an error on this page, our webmaster has been informed and will fix the error as soon as possible";
 }
 
-function getCompDates($comp_id){
+function getCompDates($comp_id, $link){
     $sql = "select Cat_ans_post
             from cato 
             WHERE catID = $comp_id";
 
-    $queryResult = doSqlComps($sql);
+    $queryResult = doSqlComps($sql, $link);
     $rowObj = $queryResult->fetchObject();
     $ansPost = $rowObj->Cat_ans_post;
     return $ansPost;
 }
-function compQuestion($comp_id, $date)
+function compQuestion($comp_id, $date, $link)
 {
     $sql = "select question, Qu_post, Date_text, id
                 from cato JOIN main on (catID = comid)
                 WHERE comid = $comp_id";
     $num = 1;
-    getLinks($comp_id, $date);
-    $queryResult = doSqlComps($sql);
+    getLinks($comp_id, $date, $link);
+    $queryResult = doSqlComps($sql, $link);
     while ($rowObj = $queryResult->fetchObject()) {
         $Qu_post = $rowObj->Qu_post;
         $Date_text = $rowObj->Date_text;
@@ -95,12 +95,12 @@ function compQuestion($comp_id, $date)
 
     }
 }
-function getLinks($comp_id, $today){
+function getLinks($comp_id, $today, $url){
     $sql = "select Cat_link_post, cat_link
             from cato 
             WHERE catID = $comp_id";
 
-    $queryResult = doSqlComps($sql);
+    $queryResult = doSqlComps($sql, $url);
     $rowObj = $queryResult->fetchObject();
     $linkPost = $rowObj->Cat_link_post;
     $link = $rowObj->cat_link;
@@ -125,7 +125,7 @@ function getWinners($comp_id){
     }
 return $winners;
 }*/
-function getAnswers($comp_id)
+function getAnswers($comp_id, $link)
 {
 
 
@@ -134,7 +134,7 @@ function getAnswers($comp_id)
                     JOIN answers on (main.id = answers.id)
                 WHERE comid = $comp_id";
     $num = 1;
-    $queryResult = doSqlComps($sql);
+    $queryResult = doSqlComps($sql, $link);
     while ($rowObj = $queryResult->fetchObject()) {
         $qutext = $rowObj->question;
         $Date_text = $rowObj->Date_text;
@@ -150,12 +150,12 @@ function getAnswers($comp_id)
     }
 }
 
-function doSqlComps($sql){
+function doSqlComps($sql, $link){
 
     $dbConn = getConnetionComps();
     $queryResult = $dbConn->query($sql);
     if ($queryResult === false){
-        sqlError();
+        sqlError($link);
     }
     return  $queryResult;
 }
