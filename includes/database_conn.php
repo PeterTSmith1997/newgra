@@ -53,7 +53,7 @@ function getConnetionComps()
 function sqlError($link){
     $message = "There was an error on $link at ". date("d-m-Y H:i:s"). "go fix it";
     $message = wordwrap($message, 70);
-    $email = "peter.t.smith@outook.com";
+    $email = "peter.t.smith@outlook.com";
     $subject = "GRA error";
 
     mail($email,$subject,$message);
