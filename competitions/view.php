@@ -53,9 +53,12 @@ include '../includes/navBar.php';
 
     <?php
 
+    require_once '../includes/functions.php';
     $comp_id = isset($_REQUEST['comp_id']) ? $_REQUEST['comp_id'] : NULL;
+    require_once  '../includes/database_conn.php';      // make db connection
+    $link = getURL();
     if (is_int($comp_id)){
-     sqlError();
+     sqlError($link);
      exit;
     }
     echo comDetails($comp_id);
