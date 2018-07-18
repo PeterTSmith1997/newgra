@@ -340,9 +340,9 @@ details;
 }
 
 
-function getWinners($id){
+function getWinners($id, $link){
     $sql = "SELECT place, namew, won, id FROM Winner WHERE win_comp = $id";
-    $queryResult = doSqlComps($sql);
+    $queryResult = doSqlComps($sql, $link);
     $winners = "<h2> The winners were</h2>";
     while ($rowObj = $queryResult->fetchObject()) {
         if ($rowObj->id == 5 ){

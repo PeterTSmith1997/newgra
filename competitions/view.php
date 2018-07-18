@@ -94,7 +94,7 @@ include '../includes/navBar.php';
 
     <p>Also as a treat <a href="https://www.petersweb.me.uk/invoicing/link.php?id=4"> petersWeb</a>
 
-        have a discount use 'easter2018' at there <a href="https://www.petersweb.me.uk/invoicing/link.php?id=4"> store</a> for 50% off hosting</p>
+       /p>
 
 </main>
 
