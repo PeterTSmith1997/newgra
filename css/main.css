@@ -332,6 +332,10 @@ footer p{
     color: darkred;
     text-decoration: dotted;
 }
+.prizesingle{
+    width: 100%;
+    margin: 0 auto;
+}
 /* mq large < 1200px*/
 @media screen and (min-width: 1200px){
 

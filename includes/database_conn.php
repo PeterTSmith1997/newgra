@@ -339,7 +339,7 @@ details;
         $details = <<<details
  <p>The prize is:</p>
 
-    <div class="prize">
+    <div class="prizesingle">
 
         <div id="prize1">
 
@@ -353,6 +353,7 @@ details;
 
             </div>
          </div>
+     </div>
             
     <div class="top">
 
