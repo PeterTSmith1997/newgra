@@ -336,6 +336,12 @@ footer p{
     width: 50%;
     margin: 0 auto;
 }
+.prizesingle #prize1 image{
+    margin: 0 auto;
+}
+.prizesingle #prize1 p{
+    margin: 0 auto;
+}
 /* mq large < 1200px*/
 @media screen and (min-width: 1200px){
 
