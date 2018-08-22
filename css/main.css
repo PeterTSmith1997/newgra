@@ -333,7 +333,7 @@ footer p{
     text-decoration: dotted;
 }
 .prizesingle #prize1{
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
 }
 /* mq large < 1200px*/
