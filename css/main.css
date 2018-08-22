@@ -336,7 +336,7 @@ footer p{
     width: 50%;
     margin: 0 auto;
 }
-.prizesingle #prize1 image{
+.prizesingle #prize1 .prizeimg{
     margin: 0 auto;
 }
 .prizesingle #prize1 p{
