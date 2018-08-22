@@ -277,7 +277,7 @@ Detail;
 
     }
     if ($id == 2){
-     $details = <<<details
+        $details = <<<details
  <p>The prizes are:</p>
 
     <div class="prize">
@@ -317,6 +317,43 @@ Detail;
         </div>
     </div>
 
+    <div class="top">
+
+        <p>Welcome to our Easter 2018 competition.  We hope you enjoy it as much as last year</p>
+
+            <p>Starting on Good Friday one question per day will be posted up to and including Easter Monday
+
+
+            All answers can be found on free sites and all sites used in compiling this competition can be found in our
+
+            <a href="../usefulLinks/"> library.</a></p>
+
+
+
+            <p id="xmas">Happy Easter from Genealogy Research Assistance</p>
+
+details;
+
+    }
+    if ($id == 3){
+        $details = <<<details
+ <p>The prize is:</p>
+
+    <div class="prize">
+
+        <div id="prize1">
+
+            <h2>First place</h2>
+
+            <p>One month subscription to <a href="https://www.findmypast.co.uk/">www.findmypast.co.uk/</a> </p>
+
+            <div class="prizeimg">
+
+                <img  class="prizeimg" src="../images/fmp%20logo.PNG">
+
+            </div>
+         </div>
+            
     <div class="top">
 
         <p>Welcome to our Easter 2018 competition.  We hope you enjoy it as much as last year</p>
