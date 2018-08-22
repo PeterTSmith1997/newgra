@@ -333,14 +333,9 @@ footer p{
     text-decoration: dotted;
 }
 .prizesingle #prize1{
-    width: 50%;
+    width: 25%;
     margin: 0 auto;
-}
-.prizesingle #prize1 .prizeimg{
-    margin: 0 auto;
-}
-.prizesingle #prize1 p{
-    margin: 0 auto;
+
 }
 /* mq large < 1200px*/
 @media screen and (min-width: 1200px){
