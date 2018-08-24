@@ -54,7 +54,7 @@ include '../includes/navBar.php'
 
     <h1>Terms and conditions Competitions </h1>
 
-    <p>Please read the competition rules carefully.  If you enter the our competition we will assume that you have done so and that you agree to them.</p>
+    <p>Please read the Terms and Conditions carefully before entering our competition.  .</p>
 
     <ol class="comps">
         <li>The competition is open to everyone who has liked our page, www.facebook.com/GenealogyResearchAssistant/ or are in our group
@@ -63,7 +63,7 @@ include '../includes/navBar.php'
         <li>No purchase is necessary.</li>
         <li>Only one entry per person</li>
         <li>To enter the competition you need to answer all 3 questions correctly. One question will be posted daily starting 25 August 2018 and concluding           on 27 August 2018. Details of where to send your answers will be posted on the final day.</li>
-        <li>The closing date for all entries is 23.59 1 September 2018.</li>
+        <li>The closing date for all entries is 23.59 1 September 2018 (uk time).</li>
         <li>If you win the competition you will be notified by email within 14 working days after the close of the competition. If you do not respond within 48 hours of being notified, your prize will be forfeited. Genealogy Research Assistance reserve the right to choose another winner. The judges decision is final and no further correspondence will be entered into.</li>
         <li>The winners names will be posted on our facebook page once all notifications have been verified and on our website.</li>
         <li>The prize is not transferable to another person.</li>
