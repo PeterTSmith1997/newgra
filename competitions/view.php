@@ -37,7 +37,7 @@
 
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 
-    <title>competitions - Genealogy Research Assistance</title>
+    <title>Competitions - Genealogy Research Assistance</title>
 
 </head>
 
