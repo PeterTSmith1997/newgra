@@ -357,9 +357,9 @@ details;
             
     <div class="top">
 
-        <p>Welcome to our Easter 2018 competition.  We hope you enjoy it as much as last year</p>
+        <p>Welcome to our August Bank Holiday 2018 competition.  We hope you enjoy it as much as last year</p>
 
-            <p>Starting on Good Friday one question per day will be posted up to and including Easter Monday
+            <p>Starting on the 25th one question per day will be posted up to and including Bank Holiday Monday
 
 
             All answers can be found on free sites and all sites used in compiling this competition can be found in our
@@ -368,7 +368,6 @@ details;
 
 
 
-            <p id="xmas">Happy Easter from Genealogy Research Assistance</p>
 
 details;
 
