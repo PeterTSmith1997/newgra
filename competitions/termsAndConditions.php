@@ -77,6 +77,13 @@ include '../includes/navBar.php'
     </ol>
 
 </main>
+<?php
+
+include '../includes/footer.php';
+
+echo poweredBy("https://www.petersweb.me.uk/invoicing/link.php?id=3");
+
+?>
 
 </body>
 

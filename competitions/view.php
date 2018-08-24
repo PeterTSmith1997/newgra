@@ -92,9 +92,6 @@ include '../includes/navBar.php';
 
     <p>Please read our Terms <a href="termsAndConditions.php">HERE</a>
 
-    <p>Also as a treat <a href="https://www.petersweb.me.uk/invoicing/link.php?id=4"> petersWeb</a>
-
-       </p>
 
 </main>
 
